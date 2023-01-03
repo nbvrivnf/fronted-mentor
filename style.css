@@ -376,6 +376,7 @@ footer ul {
   }
 
   .articles {
+    align-items: center;
     flex-direction: column;
   }
 
