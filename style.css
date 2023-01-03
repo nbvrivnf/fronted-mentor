@@ -266,6 +266,9 @@ footer ul {
   color:  hsl(228, 45%, 44%);
 }
 
+
+/*@media*/
+
 @media screen and (max-width:765px) {
   header {
     padding: 30px 40px;
@@ -415,3 +418,34 @@ footer ul {
 
 
 }
+
+/*./@media*/
+
+
+/*animaiton*/
+
+.anim {
+  opacity: 0;
+  transform: translateY(-5em);
+  animation: moveup 1s linear forwards;
+}
+
+.brief_details h1.anim {
+  animation-delay: 1.7s;
+}
+
+.brief_details p.anim {
+  animation-delay: .7s;
+}
+
+@keyframes moveup {
+  0% {
+    opacity: 0;
+    transform: translateY(-5em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*./anim*/
