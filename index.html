@@ -48,10 +48,10 @@
   <main>
     <section class="details">
       <div class="brief_details">
-        <h1>Next generation digital banking</h1>
-        <p>Take your financial life online. Your Easybank account will be a one-stop-shop
+        <h1 class="anim">Next generation digital banking</h1>
+        <p class="anim">Take your financial life online. Your Easybank account will be a one-stop-shop
           for spending, saving, budgeting, investing, and much more.</p>
-        <button class="request_inite_btn">Request Invite</button>
+        <button class="request_inite_btn anim">Request Invite</button>
       </div>
       <div class="mockup">
         <img src="./images/image-mockups.png" alt="" class="mokckup-img">
@@ -282,7 +282,44 @@
 
 -->
 
-  <script src="\app\js\script.js"></script>
+  
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({
+    reset: false,
+    distance: "100px",
+    duration: 2000,
+  });
+
+  ScrollReveal().reveal('.mockup ', {
+    delay: 500, origin: "right", duration: 2500,
+    distance: "200px"
+  });
+
+  ScrollReveal().reveal('.benefit h1 ', {
+    delay: 500, origin: "left", duration: 2500,
+    distance: "200px"
+  });
+
+  ScrollReveal().reveal('.why_list ', {
+    delay: 500, origin: "bottom", duration: 2500,
+    distance: "200px"
+  });
+  
+  ScrollReveal().reveal('.latest-articles ', {
+    delay: 500, origin: "left", duration: 2500,
+    distance: "200px"
+  });
+
+  ScrollReveal().reveal('.article_card', {
+    delay: 500, origin: "left", duration: 2500,
+    distance: "200px", interval: 200 
+  });
+
+
+
+  </script>
+  
 </body>
 
 </html>
