@@ -12,6 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stye.js" defer>
+  <script src="./js/toggle-menu.js"></script>
   <title>Frontend Mentor | Easybank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,22 +29,29 @@
 </head>
 
 <body>
-
+  
+    <!--header-->
   <header>
-    <div class="logo">
-      <img src="./images/logo.svg" alt="" class="logo_img">
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="./images/logo.svg" alt="" class="logo_img">
+      </div>
+      <button class="dropdown-toggle"></button>
+      <div class="header-site-menu" style="column-gap: 100px;">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <button class="request_inite_btn bba">Request Invite</button>
+      </div>
     </div>
-
-    <ul class="navigation">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Careers</a></li>
-    </ul>
-    <button class="request_inite_btn">Request Invite</button>
-    <button class="dropdown-toggle"><img src="./images/icon-hamburger.svg" alt=""></button>
   </header>
+  <!--./header-->
 
   <main>
     <section class="details">
