@@ -349,56 +349,6 @@ footer ul {
 /*@media*/
 
 @media screen and (max-width:765px) {
-  header {
-    padding: 30px 40px;
-  }
-
-  .navigation {
-    position: absolute;
-    top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: var(--white);
-    width: 80%;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    opacity: 0; 
-    transition: all .5s ease ease;
-  }
-
-  header .navigation li {
-    margin: 20px 0;
-  }
-
-  header .navigation li a {
-    color: var(--darkblue);
-    font-weight: 900;
-    font-size: 20px;
-  }
-
-  .navigation li a {
-    margin: 0;
-  }
-
-  .navigation li a::after {
-    bottom: -20px;
-  }
-
-  header .request_inite_btn {
-    display: none;
-  }
-
-  .active {
-    opacity: 1;
-  }
-
-  .dropdown-toggle {
-    display: block;
-  }
-
   .details {
     all: unset;
     display: flex;
